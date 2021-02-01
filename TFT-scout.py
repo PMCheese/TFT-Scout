@@ -108,7 +108,7 @@ def updateDead(buttons, player):
 
     global dead
 
-    updatetheStack(buttons)
+    ##updatetheStack(buttons) can't see to figure out what happens on player death
 
     dead = dead + 1
     buttons[player].configure(bg = 'black')
