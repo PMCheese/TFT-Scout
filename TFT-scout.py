@@ -5,6 +5,8 @@ import win32gui
 
 import tkinter as tk
 
+
+##should probably make everything a class instead of having global variables
 dead = 0
 
 
@@ -106,6 +108,8 @@ def updateDead(buttons, player):
 
     global dead
 
+    updatetheStack(buttons)
+
     dead = dead + 1
     buttons[player].configure(bg = 'black')
     doNothing(player)
@@ -140,18 +144,11 @@ def updateButtons(buttons, pressed):
     print(thestack)
 
     
-
-
-    
-
-
-
-
-
+#this covers the top left of the game which is the in game chat. Need to find a better place to put the app
 root = tk.Tk()
 root.wm_attributes("-topmost", 1)
 root.overrideredirect(1)
-root.geometry("400x200")
+root.geometry("400x200") 
 
 startFrame = startPage()
 startFrame.pack()
