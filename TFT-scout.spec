@@ -4,7 +4,7 @@ block_cipher = None
 
 
 a = Analysis(['TFT-scout.py'],
-             pathex=['C:\\Users\\guyot\\Documents\\GitHub\\TFT-Scout'],
+             pathex=['C:\\Users\\alexw\\OneDrive\\Documents\\GitHub\\TFT-Scout'],
              binaries=[],
              datas=[],
              hiddenimports=[],
